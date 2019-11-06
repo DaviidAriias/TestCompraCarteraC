@@ -16,8 +16,8 @@
     }
 
     &.contMainApp-fluidCanguroLite{
-        height: calc(100vh - 65px);
-        padding-bottom: 3%;
+        //height: calc(100vh - 65px);
+        padding-bottom: 70px;
     }
 
     &.contMainApp-fluid-menu {
@@ -1830,7 +1830,7 @@ hr, .separador {
     margin: 0 auto;
     padding: 15px;
     box-shadow: 1px -3px 5px lighten($negro-00, 70%);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;

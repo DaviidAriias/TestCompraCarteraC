@@ -114,7 +114,7 @@ function readyDoc(){
     $('.contraOfertaDinamic input:checkbox').on( 'change', function() {
         if( $(this).is(':checked') ) {
             $('.canguroLite').addClass('is--ShowedCanguroLite');
-            $('.contMainApp').addClass('contMainApp-fluidCanguroLite');
+            //$('.contMainApp').addClass('contMainApp-fluidCanguroLite');
         } else {
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
         }
