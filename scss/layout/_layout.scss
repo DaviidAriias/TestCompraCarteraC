@@ -119,6 +119,11 @@
     opacity: .9 !important;
 }
 
+//Scroll locked
+.is--scrollDisabled{
+    overflow-y: hidden;
+}
+
 //Box general
 .contBox{
     display: block;

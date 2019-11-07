@@ -14,7 +14,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; outline: none !important; font-family: "Roboto", sans-serif; font-weight: normal; -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important; }
 *::selection { background: #575757; color: #fff; }
 
-body { max-width: 100%; position: relative; overflow-x: hidden; font-size: 0; box-sizing: border-box; min-height: 100vh; }
+body { max-width: 100%; position: relative; overflow-x: hidden; font-size: 0; box-sizing: border-box; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; }
 
@@ -47,6 +47,8 @@ img { padding: 0; margin: 0; border: 0; }
 .contMainApp .title-main h1 { display: inline-block; width: 100%; text-align: center; font-weight: bold; font-size: 22px !important; color: #575757; margin: 0; }
 
 .opacity-full { opacity: .9 !important; }
+
+.is--scrollDisabled { overflow-y: hidden; }
 
 .contBox { display: block; border-radius: 6px; width: 90%; margin: 20px auto 0; position: relative; transition-duration: .2s; }
 .contBox.boxConfirm { padding-top: 40px; }

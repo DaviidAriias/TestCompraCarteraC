@@ -12,30 +12,31 @@ function readyDoc(){
     //Estudio de crédito
     $('#open_modal-alt').click(function(){
         $('.contStudyProcess').fadeIn();
+        $('body').addClass('is--scrollDisabled');
     });
 
     //Modales
     $('#open_modal').click(function () {
         $('#modalDefault').addClass('is--Showed');
+        $('body').addClass('is--scrollDisabled');
     });
 
     $('#close_modal').click(function () {
         $('#modalDefault').removeClass('is--Showed');
+        $('body').removeClass('is--scrollDisabled');
     });
 
     //Canguro
     $('#open_modal-cang').click(function(){
         $('.contCanguroMain').addClass('is--ShowedCanguro');
-        //$("html, body").animate({ 
-        //    scrollTop: $('html, body').get(0).scrollHeight 
-        //}, 100); 
+        $('body').addClass('is--scrollDisabled');
     });
+
     $('.close_modal-cang').click(function(){
         $('.contCanguroMain').removeClass('is--ShowedCanguro');
+        $('body').removeClass('is--scrollDisabled');
     });
 
-
-    
 
     //Cuando se tapean los inputs no hay un efecto de recoger checkbox
     $('.dinamicCheckboxContainer input[type="number"]').click(function(e) {
@@ -48,12 +49,10 @@ function readyDoc(){
             $('.dinamicOne').show();
             $('.canguroLite').addClass('is--ShowedCanguroLite');
             $('.contMainApp').addClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').addClass('is--ShowedCanguro');
         } else {
             $('.dinamicOne').hide();
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
             $('.contMainApp').removeClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').removeClass('is--ShowedCanguro');
         }
     }); 
 
@@ -62,12 +61,10 @@ function readyDoc(){
             $('.dinamicTwo').show();
             $('.canguroLite').addClass('is--ShowedCanguroLite');
             $('.contMainApp').addClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').addClass('is--ShowedCanguro');
         } else {
-            $('.dinamicOne').hide();
+            $('.dinamicTwo').hide();
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
             $('.contMainApp').removeClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').removeClass('is--ShowedCanguro');
         }
     }); 
 
@@ -77,10 +74,9 @@ function readyDoc(){
             $('.canguroLite').addClass('is--ShowedCanguroLite');
             $('.contMainApp').addClass('contMainApp-fluidCanguroLite');  
         } else {
-            $('.dinamicOne').hide();
+            $('.dinamicThree').hide();
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
             $('.contMainApp').removeClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').removeClass('is--ShowedCanguro');
         }
     }); 
 
@@ -90,10 +86,9 @@ function readyDoc(){
             $('.canguroLite').addClass('is--ShowedCanguroLite');
             $('.contMainApp').addClass('contMainApp-fluidCanguroLite');
         } else {
-            $('.dinamicOne').hide();
+            $('.dinamicFour').hide();
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
             $('.contMainApp').removeClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').removeClass('is--ShowedCanguro');
         }
     }); 
 
@@ -103,10 +98,9 @@ function readyDoc(){
             $('.canguroLite').addClass('is--ShowedCanguroLite');
             $('.contMainApp').addClass('contMainApp-fluidCanguroLite');
         } else {
-            $('.dinamicOne').hide();
+            $('.dinamicFive').hide();
             $('.canguroLite').removeClass('is--ShowedCanguroLite');
             $('.contMainApp').removeClass('contMainApp-fluidCanguroLite');
-            $('.contCanguroMain').removeClass('is--ShowedCanguro');
         }
     }); 
 
